@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="./../js/utility/common.css">
+	<script type="text/javascript" src="./../js/utility/base.js"></script>
+	<script type="text/javascript" src="./../js/utility/sampledata.js"></script>
+</head>
+<body>
+	<div class="main-container"></div>
+	
+	<script type="text/javascript" src="./../js/buttongroup/buttonmodel.js"></script>
+	<script type="text/javascript" src="./../js/buttongroup/buttongroupcollection.js"></script>
+	<script type="text/javascript" src="./../js/buttongroup/buttongroupview.js"></script>
+	<script type="text/javascript" src="./../js/buttongroup/buttongroupcontroller.js"></script>
+	
+	<script type="text/javascript" src="./../js/display/displaymodel.js"></script>
+	<script type="text/javascript" src="./../js/display/displayview.js"></script>
+	<script type="text/javascript" src="./../js/display/displaycontroller.js"></script>
+	
+	<script type="text/javascript" src="./../js/calculator/calculatormodel.js"></script>
+	<script type="text/javascript" src="./../js/calculator/calculatorview.js"></script>
+	<script type="text/javascript" src="./../js/calculator/calculatorcontroller.js"></script>
+	
+	<script type="text/javascript">
+		var btncon = new NS.CAL.calculator.controller({
+			el : document.getElementsByClassName('main-container')[0],
+			calculatorAttr : calculatorAttr
+		});
+	</script>
+</body>
+</html>
